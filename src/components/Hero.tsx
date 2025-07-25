@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
                 <img
                   src={profileImage}
                   alt="Kothapalli Uday Sadvik"
-                  className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full"
+                  className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full"
                 />
               </div>
             </div>
