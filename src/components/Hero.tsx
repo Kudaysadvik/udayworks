@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
-import profileImage from '../assets/profile-image.jpg';
+import profileImage from '../assets/new-profile-image.jpg';
 
 const Hero: React.FC = () => {
   const [currentRole, setCurrentRole] = useState(0);
