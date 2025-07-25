@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { removeBackground, loadImage } from '../utils/backgroundRemoval';
 import profileImage from '/lovable-uploads/daa1941f-4c6e-43a3-adb9-3ca24336b9fc.png';
 
 const Hero: React.FC = () => {
   const [currentRole, setCurrentRole] = useState(0);
+  const [processedImageUrl, setProcessedImageUrl] = useState<string>(profileImage);
   const roles = [
     'Data Science Enthusiast',
     'Aspiring Data Analyst', 
@@ -16,6 +18,35 @@ const Hero: React.FC = () => {
     }, 3000);
 
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const processImage = async () => {
+      try {
+        // Fetch the image as blob
+        const response = await fetch(profileImage);
+        const blob = await response.blob();
+        
+        // Load image element
+        const img = await loadImage(blob);
+        
+        // Remove background
+        const processedBlob = await removeBackground(img);
+        
+        // Create object URL for the processed image
+        const processedUrl = URL.createObjectURL(processedBlob);
+        setProcessedImageUrl(processedUrl);
+        
+        // Cleanup previous URL
+        return () => URL.revokeObjectURL(processedUrl);
+      } catch (error) {
+        console.error('Failed to process image:', error);
+        // Fallback to original image
+        setProcessedImageUrl(profileImage);
+      }
+    };
+
+    processImage();
   }, []);
 
   const socialLinks = [
@@ -82,7 +113,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-xl opacity-30 animate-float"></div>
               <img
-                src={profileImage}
+                src={processedImageUrl}
                 alt="Kothapalli Uday Sadvik"
                 className="relative w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 object-cover rounded-full border-4 border-white/10 shadow-2xl"
               />
