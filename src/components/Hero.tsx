@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
-import profileImage from '../assets/new-profile-image.jpg';
+import profileImage from '/lovable-uploads/daa1941f-4c6e-43a3-adb9-3ca24336b9fc.png';
 
 const Hero: React.FC = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
               <img
                 src={profileImage}
                 alt="Kothapalli Uday Sadvik"
-                className="relative w-44 h-44 md:w-52 md:h-52 object-cover rounded-full"
+                className="relative w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 object-cover rounded-full border-4 border-white/10 shadow-2xl"
               />
             </div>
           </div>
