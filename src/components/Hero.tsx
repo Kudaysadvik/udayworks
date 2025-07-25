@@ -81,13 +81,11 @@ const Hero: React.FC = () => {
           <div className="flex justify-center lg:justify-end animate-slideUp">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-xl opacity-30 animate-float"></div>
-              <div className="relative glass-card !p-2 rounded-full glow-primary">
-                <img
-                  src={profileImage}
-                  alt="Kothapalli Uday Sadvik"
-                  className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full"
-                />
-              </div>
+              <img
+                src={profileImage}
+                alt="Kothapalli Uday Sadvik"
+                className="relative w-40 h-40 md:w-48 md:h-48 object-cover rounded-full"
+              />
             </div>
           </div>
         </div>
