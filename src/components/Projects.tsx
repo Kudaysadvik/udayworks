@@ -22,6 +22,15 @@ const Projects: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
+  const technicalSkills = [
+    { name: 'Python', level: 90 },
+    { name: 'SQL', level: 85 },
+    { name: 'Power BI', level: 88 },
+    { name: 'Machine Learning', level: 75 },
+    { name: 'Data Visualization', level: 92 },
+    { name: 'Excel', level: 95 }
+  ];
+
   const projects = [
     {
       icon: Brain,
@@ -134,10 +143,35 @@ const Projects: React.FC = () => {
             ))}
           </div>
 
+          {/* Technical Proficiency */}
+          <div className="glass-card mt-16">
+            <h3 className="text-2xl font-semibold mb-8 text-center">Technical Proficiency</h3>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {technicalSkills.map((skill, index) => (
+                <div key={index} className="space-y-3">
+                  <div className="flex justify-center">
+                    <span className="font-medium text-center">{skill.name}</span>
+                  </div>
+                  <div className="w-full glass rounded-full h-3 overflow-hidden">
+                    <div
+                      className={`h-full bg-gradient-primary transition-all duration-1000 ease-out ${
+                        isVisible ? 'animate-slideUp' : 'w-0'
+                      }`}
+                      style={{ 
+                        width: isVisible ? `${skill.level}%` : '0%',
+                        animationDelay: `${(index + 6) * 0.1}s`
+                      }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* View More Projects */}
           <div className="text-center mt-12">
             <a
-              href="https://github.com/udaysadvik"
+              href="https://github.com/Kudaysadvik"
               target="_blank"
               rel="noopener noreferrer"
               className="glass-card glass-hover glow-hover px-8 py-3 bg-gradient-primary text-white font-semibold rounded-lg transition-all duration-300 inline-flex items-center gap-2"

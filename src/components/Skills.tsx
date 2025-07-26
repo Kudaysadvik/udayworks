@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
       icon: Code,
       title: 'Programming',
       color: 'text-primary',
-      skills: ['Python', 'R', 'JavaScript', 'HTML/CSS']
+      skills: ['Python', 'Machine Learning', 'Deep Learning', 'JavaScript', 'HTML/CSS']
     },
     {
       icon: BarChart3,
@@ -45,18 +45,10 @@ const Skills: React.FC = () => {
       icon: Settings,
       title: 'Tools & Platforms',
       color: 'text-primary',
-      skills: ['Git', 'Jupyter', 'VS Code', 'Azure']
+      skills: ['Git', 'Jupyter', 'VS Code', 'Google Colab', 'Jira']
     }
   ];
 
-  const technicalSkills = [
-    { name: 'Python', level: 90 },
-    { name: 'SQL', level: 85 },
-    { name: 'Power BI', level: 88 },
-    { name: 'Machine Learning', level: 75 },
-    { name: 'Data Visualization', level: 92 },
-    { name: 'Excel', level: 95 }
-  ];
 
   return (
     <section id="skills" className="py-20" ref={sectionRef}>
@@ -99,31 +91,6 @@ const Skills: React.FC = () => {
             ))}
           </div>
 
-          {/* Technical Proficiency */}
-          <div className="glass-card">
-            <h3 className="text-2xl font-semibold mb-8 text-center">Technical Proficiency</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              {technicalSkills.map((skill, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium">{skill.name}</span>
-                    <span className="text-primary font-semibold">{skill.level}%</span>
-                  </div>
-                  <div className="w-full glass rounded-full h-3 overflow-hidden">
-                    <div
-                      className={`h-full bg-gradient-primary transition-all duration-1000 ease-out ${
-                        isVisible ? 'animate-slideUp' : 'w-0'
-                      }`}
-                      style={{ 
-                        width: isVisible ? `${skill.level}%` : '0%',
-                        animationDelay: `${index * 0.1}s`
-                      }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
