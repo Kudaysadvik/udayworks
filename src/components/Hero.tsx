@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Instagram } from 'lucide-react';
+import { Github, Linkedin, Instagram, FileText } from 'lucide-react';
 import { removeBackground, loadImage } from '../utils/backgroundRemoval';
 import profileImage from '/lovable-uploads/daa1941f-4c6e-43a3-adb9-3ca24336b9fc.png';
 
@@ -50,9 +50,10 @@ const Hero: React.FC = () => {
   }, []);
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://linkedin.com/in/uday-sadvik', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com/udaysadvik', label: 'GitHub' },
-    { icon: Instagram, href: 'https://instagram.com/udaysadvik', label: 'Instagram' }
+    { icon: FileText, href: 'https://udaysadvik.tiiny.site', label: 'Resume' },
+    { icon: Github, href: 'https://github.com/Kudaysadvik', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/kothapalliudaysadvik2002', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/_journeysinframes_?igsh=amsxemd2ZDN4ZHB4', label: 'Instagram' }
   ];
 
   return (
