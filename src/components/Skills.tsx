@@ -27,13 +27,13 @@ const Skills: React.FC = () => {
       icon: Code,
       title: 'Programming',
       color: 'text-primary',
-      skills: ['Python', 'Machine Learning', 'Deep Learning', 'JavaScript', 'HTML/CSS']
+      skills: ['Python', 'Machine Learning', 'Sales Analytics', 'JavaScript', 'HTML/CSS']
     },
     {
       icon: BarChart3,
       title: 'Visualization',
       color: 'text-secondary',
-      skills: ['Power BI', 'Tableau', 'Excel', 'Matplotlib']
+      skills: ['Power BI', 'Tableau', 'Excel', 'Matplotlib', 'Seaborn']
     },
     {
       icon: Database,

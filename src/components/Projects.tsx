@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Github, ExternalLink, Brain, Hand, BarChart3 } from 'lucide-react';
+import { Github, ExternalLink, Brain, BarChart3, TrendingUp } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -42,11 +42,11 @@ const Projects: React.FC = () => {
       gradient: 'from-primary to-secondary'
     },
     {
-      icon: Hand,
-      title: 'Virtual Mouse using Hand Gestures',
-      description: 'Computer vision application that allows mouse control through hand gestures using OpenCV and MediaPipe for real-time detection.',
-      technologies: ['Python', 'OpenCV', 'MediaPipe', 'NumPy'],
-      github: 'https://github.com/udaysadvik/virtual-mouse',
+      icon: TrendingUp,
+      title: 'Black Friday Sales Prediction',
+      description: 'Machine learning model to predict sales patterns during Black Friday using advanced regression techniques and feature engineering for retail analytics.',
+      technologies: ['Python', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Seaborn'],
+      github: 'https://github.com/Kudaysadvik/black-friday-sales-prediction',
       live: null,
       gradient: 'from-secondary to-accent'
     },

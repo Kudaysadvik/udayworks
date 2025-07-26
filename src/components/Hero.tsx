@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Instagram, FileText } from 'lucide-react';
 import { removeBackground, loadImage } from '../utils/backgroundRemoval';
-import profileImage from '/lovable-uploads/daa1941f-4c6e-43a3-adb9-3ca24336b9fc.png';
+import profileImage from '/lovable-uploads/fb6348ff-7d22-469a-a287-db9e1b42eb32.png';
 
 const Hero: React.FC = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -50,7 +50,6 @@ const Hero: React.FC = () => {
   }, []);
 
   const socialLinks = [
-    { icon: FileText, href: 'https://udaysadvik.tiiny.site', label: 'Resume' },
     { icon: Github, href: 'https://github.com/Kudaysadvik', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/kothapalliudaysadvik2002', label: 'LinkedIn' },
     { icon: Instagram, href: 'https://www.instagram.com/_journeysinframes_?igsh=amsxemd2ZDN4ZHB4', label: 'Instagram' }
@@ -80,6 +79,17 @@ const Hero: React.FC = () => {
               Turning data into insights that drive decisions.
             </p>
 
+            {/* Resume Button */}
+            <div className="mb-8 flex justify-center lg:justify-start">
+              <a
+                href="https://udaysadvik.tiiny.site"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card glass-hover glow-hover px-6 py-3 bg-gradient-primary text-white font-semibold rounded-lg transition-all duration-300 inline-flex items-center gap-2"
+              >
+                View Resume
+              </a>
+            </div>
 
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">

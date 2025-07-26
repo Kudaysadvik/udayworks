@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Mail, Linkedin, Send, MapPin, Phone } from 'lucide-react';
+import { Mail, Linkedin, Send, MapPin, Phone, Github, Instagram } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,12 +52,24 @@ const Contact: React.FC = () => {
       icon: Linkedin,
       title: 'LinkedIn',
       details: 'Connect with me',
-      href: 'https://linkedin.com/in/uday-sadvik'
+      href: 'https://www.linkedin.com/in/kothapalliudaysadvik2002'
+    },
+    {
+      icon: Github,
+      title: 'GitHub',
+      details: 'View my projects',
+      href: 'https://github.com/Kudaysadvik'
+    },
+    {
+      icon: Instagram,
+      title: 'Instagram',
+      details: 'Follow my journey',
+      href: 'https://www.instagram.com/_journeysinframes_?igsh=amsxemd2ZDN4ZHB4'
     },
     {
       icon: MapPin,
       title: 'Location',
-      details: 'Hyderabad, India',
+      details: 'Telangana State, India',
       href: null
     }
   ];

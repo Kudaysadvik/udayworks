@@ -47,7 +47,9 @@ const About: React.FC = () => {
               <p className="text-muted-foreground text-lg leading-relaxed">
                 With expertise in Python, SQL, and Power BI, I specialize in end-to-end data analysis - 
                 from data collection and cleaning to advanced analytics and compelling visualizations. 
-                I'm always eager to learn new technologies and methodologies in the ever-evolving field of data science.
+                I'm also skilled in development, building data-driven applications and automation solutions 
+                that streamline business processes. I'm always eager to learn new technologies and methodologies 
+                in the ever-evolving field of data science.
               </p>
             </div>
 
@@ -80,7 +82,7 @@ const About: React.FC = () => {
                   <div>
                     <h4 className="text-xl font-semibold mb-2">Location</h4>
                     <p className="text-muted-foreground">
-                      Hyderabad, India
+                      Telangana State, India
                     </p>
                     <p className="text-sm text-muted-foreground">
                       Available for remote opportunities worldwide
@@ -98,10 +100,10 @@ const About: React.FC = () => {
                   <div>
                     <h4 className="text-xl font-semibold mb-2">Career Goals</h4>
                     <p className="text-muted-foreground">
-                      Seeking opportunities as a Data Analyst or Data Scientist
+                      Pursuing opportunities in Business Analysis
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      Focus on business intelligence and predictive analytics
+                      Focus on business intelligence and data-driven decision making
                     </p>
                   </div>
                 </div>
