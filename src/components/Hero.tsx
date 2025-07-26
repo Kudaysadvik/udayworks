@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 import { removeBackground, loadImage } from '../utils/backgroundRemoval';
 import profileImage from '/lovable-uploads/daa1941f-4c6e-43a3-adb9-3ca24336b9fc.png';
 
@@ -52,8 +52,7 @@ const Hero: React.FC = () => {
   const socialLinks = [
     { icon: Linkedin, href: 'https://linkedin.com/in/uday-sadvik', label: 'LinkedIn' },
     { icon: Github, href: 'https://github.com/udaysadvik', label: 'GitHub' },
-    { icon: ExternalLink, href: 'https://kaggle.com/udaysadvik', label: 'Kaggle' },
-    { icon: Mail, href: 'mailto:udaysadvik@gmail.com', label: 'Email' }
+    { icon: Instagram, href: 'https://instagram.com/udaysadvik', label: 'Instagram' }
   ];
 
   return (
@@ -80,16 +79,6 @@ const Hero: React.FC = () => {
               Turning data into insights that drive decisions.
             </p>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
-              <button className="glass-card glass-hover glow-hover px-8 py-3 bg-gradient-primary text-white font-semibold rounded-lg transition-all duration-300">
-                <Download className="inline w-5 h-5 mr-2" />
-                Download Resume
-              </button>
-              <button className="glass-card glass-hover px-8 py-3 font-semibold rounded-lg transition-all duration-300">
-                View Projects
-              </button>
-            </div>
 
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">
