@@ -9,26 +9,7 @@ interface Certificate {
 }
 
 const Certifications: React.FC = () => {
-  const [certificates, setCertificates] = useState<Certificate[]>([
-    {
-      id: '1',
-      name: 'Machine Learning Specialization',
-      organization: 'Stanford University',
-      pdfUrl: '#' // Placeholder URL
-    },
-    {
-      id: '2',
-      name: 'Python for Data Science',
-      organization: 'IBM',
-      pdfUrl: '#' // Placeholder URL
-    },
-    {
-      id: '3',
-      name: 'Advanced SQL Analytics',
-      organization: 'Google',
-      pdfUrl: '#' // Placeholder URL
-    }
-  ]);
+  const [certificates, setCertificates] = useState<Certificate[]>([]);
   
   const [isVisible, setIsVisible] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
