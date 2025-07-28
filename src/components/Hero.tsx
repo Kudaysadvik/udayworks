@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Instagram, FileText } from 'lucide-react';
 import { removeBackground, loadImage } from '../utils/backgroundRemoval';
-import profileImage from '/lovable-uploads/fb6348ff-7d22-469a-a287-db9e1b42eb32.png';
+import profileImage from '/lovable-uploads/2a859e59-a8f4-41dd-a15f-9211d5266d5c.png';
 
 const Hero: React.FC = () => {
   const [currentRole, setCurrentRole] = useState(0);
