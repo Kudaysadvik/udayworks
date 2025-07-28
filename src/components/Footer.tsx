@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://linkedin.com/in/uday-sadvik', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com/udaysadvik', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/kothapalliudaysadvik2002', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/Kudaysadvik', label: 'GitHub' },
     { icon: ExternalLink, href: 'https://kaggle.com/udaysadvik', label: 'Kaggle' },
     { icon: Mail, href: 'mailto:udaysadvik@gmail.com', label: 'Email' }
   ];

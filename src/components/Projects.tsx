@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
       title: 'House Price Prediction',
       description: 'Machine learning model to predict house prices using regression algorithms. Implemented feature engineering and model optimization techniques.',
       technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
-      github: 'https://github.com/udaysadvik/house-price-prediction',
+      github: 'https://github.com/Kudaysadvik/house-price-prediction',
       live: null,
       gradient: 'from-primary to-secondary'
     },
@@ -143,6 +143,19 @@ const Projects: React.FC = () => {
             ))}
           </div>
 
+          {/* View More Projects */}
+          <div className="text-center mt-12">
+            <a
+              href="https://github.com/Kudaysadvik"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card glass-hover glow-hover px-8 py-3 bg-gradient-primary text-white font-semibold rounded-lg transition-all duration-300 inline-flex items-center gap-2"
+            >
+              <Github className="w-5 h-5" />
+              View All Projects
+            </a>
+          </div>
+
           {/* Technical Proficiency */}
           <div className="glass-card mt-16">
             <h3 className="text-2xl font-semibold mb-8 text-center">Technical Proficiency</h3>
@@ -168,18 +181,6 @@ const Projects: React.FC = () => {
             </div>
           </div>
 
-          {/* View More Projects */}
-          <div className="text-center mt-12">
-            <a
-              href="https://github.com/Kudaysadvik"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-hover glow-hover px-8 py-3 bg-gradient-primary text-white font-semibold rounded-lg transition-all duration-300 inline-flex items-center gap-2"
-            >
-              <Github className="w-5 h-5" />
-              View All Projects
-            </a>
-          </div>
         </div>
       </div>
     </section>

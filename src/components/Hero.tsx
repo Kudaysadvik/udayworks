@@ -115,7 +115,7 @@ const Hero: React.FC = () => {
               <img
                 src={processedImageUrl}
                 alt="Kothapalli Uday Sadvik"
-                className="relative w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+                className="relative w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 object-cover rounded-full shadow-2xl"
               />
             </div>
           </div>
