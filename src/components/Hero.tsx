@@ -9,7 +9,8 @@ const Hero: React.FC = () => {
   const roles = [
     'Data Science Enthusiast',
     'Aspiring Data Analyst', 
-    'Power BI Developer'
+    'Power BI Developer',
+    'Machine Learning Engineer'
   ];
 
   useEffect(() => {
