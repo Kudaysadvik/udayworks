@@ -20,6 +20,16 @@ const Certifications: React.FC = () => {
   const certificates: Certificate[] = [
     {
       id: '1',
+      name: 'Data Analytics and Visualization Job Simulation',
+      organization: 'Accenture (via Forage)',
+      dateEarned: 'February 2025',
+      description: 'Completed practical tasks in project understanding, data cleaning & modeling, data visualization & storytelling, and client presentation.',
+      category: 'Data Analytics',
+      certificateUrl: 'https://forage.com/verify/certificate',
+      downloadUrl: '/lovable-uploads/8f56d807-9dfe-4abb-9afd-8e5d0648ea52.png'
+    },
+    {
+      id: '2',
       name: 'Google Data Analytics Professional Certificate',
       organization: 'Google Career Certificates',
       dateEarned: 'December 2023',
@@ -29,7 +39,7 @@ const Certifications: React.FC = () => {
       downloadUrl: '/certificates/google-data-analytics.pdf'
     },
     {
-      id: '2',
+      id: '3',
       name: 'Microsoft Power BI Data Analyst Associate',
       organization: 'Microsoft',
       dateEarned: 'October 2023',
@@ -38,7 +48,7 @@ const Certifications: React.FC = () => {
       certificateUrl: 'https://learn.microsoft.com/en-us/users/example/credentials/example',
     },
     {
-      id: '3',
+      id: '4',
       name: 'AWS Machine Learning Specialty',
       organization: 'Amazon Web Services',
       dateEarned: 'August 2023',
@@ -47,7 +57,7 @@ const Certifications: React.FC = () => {
       certificateUrl: 'https://aws.amazon.com/verification',
     },
     {
-      id: '4',
+      id: '5',
       name: 'Python for Data Science and Machine Learning',
       organization: 'Coursera - University of Michigan',
       dateEarned: 'June 2023',
