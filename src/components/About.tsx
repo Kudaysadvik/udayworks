@@ -39,17 +39,8 @@ const About: React.FC = () => {
             {/* Left Column - Introduction */}
             <div className="glass-card animate-slideUp">
               <h3 className="text-2xl font-semibold mb-6 text-primary">Who I Am</h3>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                I'm a dedicated data enthusiast with a strong foundation in data science and analytics. 
-                My journey began with a curiosity about how data can tell stories and influence strategic decisions. 
-                I enjoy working with complex datasets and creating visualizations that make data accessible and actionable.
-              </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                With expertise in Python, SQL, and Power BI, I specialize in end-to-end data analysis - 
-                from data collection and cleaning to advanced analytics and compelling visualizations. 
-                I'm also skilled in development, building data-driven applications and automation solutions 
-                that streamline business processes. I'm always eager to learn new technologies and methodologies 
-                in the ever-evolving field of data science.
+                Insightful, approachable, and always eager to learn—I'm a data science enthusiast who tackles problems with curiosity and a keen analytical mindset. My portfolio features carefully selected projects that demonstrate not just technical skills, but also a passion for turning data into actionable stories. Let's connect and explore how my growing expertise can contribute to your team's success.
               </p>
             </div>
 

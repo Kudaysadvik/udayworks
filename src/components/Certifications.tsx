@@ -26,7 +26,7 @@ const Certifications: React.FC = () => {
       description: 'Completed practical tasks in project understanding, data cleaning & modeling, data visualization & storytelling, and client presentation.',
       category: 'Data Analytics',
       certificateUrl: 'https://forage.com/verify/certificate',
-      downloadUrl: '/lovable-uploads/8f56d807-9dfe-4abb-9afd-8e5d0648ea52.png'
+      downloadUrl: '/lovable-uploads/87243650-03ff-4e75-901d-f6a58d649246.png'
     }
   ];
 
@@ -142,7 +142,7 @@ const Certifications: React.FC = () => {
             </p>
             <Button 
               className="glass hover:glow-primary transition-all duration-300"
-              onClick={() => window.open('https://linkedin.com/in/kothapalli-uday-sadvik', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/kothapalliudaysadvik2002', '_blank')}
             >
               <Award className="w-4 h-4 mr-2" />
               Connect on LinkedIn
