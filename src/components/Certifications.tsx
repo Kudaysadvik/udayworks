@@ -107,22 +107,6 @@ const Certifications: React.FC = () => {
                       View Certificate
                     </Button>
                   )}
-                  {cert.downloadUrl && (
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="glass hover:bg-secondary/10 hover:text-secondary hover:border-secondary/30"
-                      onClick={() => {
-                        const link = document.createElement('a');
-                        link.href = cert.downloadUrl!;
-                        link.download = `${cert.name.replace(/\s+/g, '_')}.pdf`;
-                        link.click();
-                      }}
-                    >
-                      <Download className="w-4 h-4 mr-2" />
-                      Download
-                    </Button>
-                  )}
                 </div>
               </CardContent>
             </Card>
