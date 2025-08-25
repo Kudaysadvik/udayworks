@@ -27,43 +27,6 @@ const Certifications: React.FC = () => {
       category: 'Data Analytics',
       certificateUrl: 'https://forage.com/verify/certificate',
       downloadUrl: '/lovable-uploads/8f56d807-9dfe-4abb-9afd-8e5d0648ea52.png'
-    },
-    {
-      id: '2',
-      name: 'Google Data Analytics Professional Certificate',
-      organization: 'Google Career Certificates',
-      dateEarned: 'December 2023',
-      description: 'Comprehensive program covering data analysis fundamentals, data visualization, and statistical analysis using tools like SQL, R, and Tableau.',
-      category: 'Data Analytics',
-      certificateUrl: 'https://coursera.org/verify/professional-cert/example',
-      downloadUrl: '/certificates/google-data-analytics.pdf'
-    },
-    {
-      id: '3',
-      name: 'Microsoft Power BI Data Analyst Associate',
-      organization: 'Microsoft',
-      dateEarned: 'October 2023',
-      description: 'Demonstrates skills in preparing data, modeling data, visualizing and analyzing data, and deploying and maintaining assets using Microsoft Power BI.',
-      category: 'Business Intelligence',
-      certificateUrl: 'https://learn.microsoft.com/en-us/users/example/credentials/example',
-    },
-    {
-      id: '4',
-      name: 'AWS Machine Learning Specialty',
-      organization: 'Amazon Web Services',
-      dateEarned: 'August 2023',
-      description: 'Validates expertise in building, training, tuning, and deploying machine learning models using AWS services.',
-      category: 'Machine Learning',
-      certificateUrl: 'https://aws.amazon.com/verification',
-    },
-    {
-      id: '5',
-      name: 'Python for Data Science and Machine Learning',
-      organization: 'Coursera - University of Michigan',
-      dateEarned: 'June 2023',
-      description: 'Comprehensive course covering Python programming for data analysis, visualization, and machine learning implementation.',
-      category: 'Programming',
-      downloadUrl: '/certificates/python-ml.pdf'
     }
   ];
 
@@ -179,7 +142,7 @@ const Certifications: React.FC = () => {
             </p>
             <Button 
               className="glass hover:glow-primary transition-all duration-300"
-              onClick={() => window.open('https://linkedin.com/in/yourprofile', '_blank')}
+              onClick={() => window.open('https://linkedin.com/in/kothapalli-uday-sadvik', '_blank')}
             >
               <Award className="w-4 h-4 mr-2" />
               Connect on LinkedIn
