@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Calendar, Building2, Award, ExternalLink, Download } from 'lucide-react';
 
 interface Certificate {
@@ -10,9 +11,10 @@ interface Certificate {
   organization: string;
   dateEarned: string;
   description?: string;
-  certificateUrl?: string;
-  downloadUrl?: string;
-  category: string;
+      certificateUrl?: string;
+      downloadUrl?: string;
+      certificateImage?: string;
+      category: string;
 }
 
 const Certifications: React.FC = () => {
@@ -26,7 +28,7 @@ const Certifications: React.FC = () => {
       description: 'Completed practical tasks in project understanding, data cleaning & modeling, data visualization & storytelling, and client presentation.',
       category: 'Data Analytics',
       certificateUrl: 'https://forage.com/verify/certificate',
-      downloadUrl: '/lovable-uploads/87243650-03ff-4e75-901d-f6a58d649246.png'
+      certificateImage: '/lovable-uploads/87243650-03ff-4e75-901d-f6a58d649246.png'
     }
   ];
 
@@ -96,16 +98,26 @@ const Certifications: React.FC = () => {
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap gap-3">
-                  {cert.certificateUrl && (
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="glass hover:bg-primary/10 hover:text-primary hover:border-primary/30"
-                      onClick={() => window.open(cert.certificateUrl, '_blank')}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Certificate
-                    </Button>
+                  {cert.certificateImage && (
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button 
+                          variant="outline" 
+                          size="sm"
+                          className="glass hover:bg-primary/10 hover:text-primary hover:border-primary/30"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          View Certificate
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl max-h-[80vh] overflow-auto">
+                        <img 
+                          src={cert.certificateImage} 
+                          alt={`${cert.name} Certificate`}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </DialogContent>
+                    </Dialog>
                   )}
                 </div>
               </CardContent>
